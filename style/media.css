@@ -1,0 +1,250 @@
+:root {
+    font-size: 16px;
+}
+
+/* ? =================== Container ===================  */
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px; 
+    }
+}
+
+@media screen and (max-width: 1399.9808px) { 
+    .container {
+        max-width: 1140px; 
+    }
+}
+
+@media screen and (max-width: 1199.9808px) { 
+    .container {
+        max-width: 960px; 
+    }
+}
+
+@media screen and (max-width: 991.9808px) { 
+    .container {
+        max-width: 720px; 
+    }
+}
+
+@media screen and (max-width: 767.9808px) { 
+    .container {
+        max-width: 540px; 
+    }
+}
+
+@media screen and (max-width: 575.9808px) { 
+    .container {
+        padding-inline: 15px; 
+    }
+}
+
+
+
+ /* ? =================== NavBar ===================  */
+
+ @media screen and (max-width: 1200px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .mode-logo {
+        margin-left: auto;
+        margin-right: 1.5625rem;
+    }
+
+    nav ul {
+        position: absolute;
+        transform: translateX(100%);
+        flex-direction: column;
+        gap: 1.875rem;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 100%;
+        align-items: flex-start;
+        background-color: var(--color-light);
+        padding-top: 1.25rem;
+        padding-inline: 10px;
+    }
+
+    nav ul .cross {
+        display: block;
+        align-self: flex-end;
+    }
+ }
+
+
+
+
+
+
+ /* ? =================== Header ===================  */
+
+ @media screen and (min-width: 1400px) {
+    header {
+        min-height: 100vh; 
+    }
+}
+
+@media screen and (max-width: 992px) { 
+    :root {
+        font-size: 15px;
+    }
+   
+    header .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    header .container > * {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header .header-content {
+        margin-top: 1.875rem;
+      }
+
+      header .btn-main {
+        --border-radius: 100vh 100vh 100vh 100vh;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 13px;
+    }
+    
+    header .button-group {
+        flex-direction: column;
+        gap: 1.875rem;
+      }
+}
+
+ /* ? =================== Chefs ===================  */
+
+ @media screen and (max-width: 992px) {
+    .chefs .chef-item {
+        width: calc( calc(100% - var(--gap) * 1) / 2);
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .chefs .chef-item {
+        width: 100%;
+    }
+ }
+
+
+  /* ? =================== Gallery ===================  */
+
+  @media screen and (max-width: 1400px) {
+    .gallery-pics {
+      height: 1000px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .gallery-pics {
+      height: 845px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .gallery-pics {
+      height: 1405px;
+    }
+  
+    .gallery-pics picture {
+      width: calc(calc(100% - var(--gap)) * 1 / 2);
+    }
+  
+    .gallery .pizza {
+      order: 1;
+    }
+    .gallery .fried {
+      order: 6;
+    }
+    .gallery .frittata {
+      order: 4;
+    }
+    .gallery .kebab {
+      order: 7;
+    }
+    .gallery .burger {
+      order: 2;
+    }
+    .gallery .pizza-fly {
+      order: 3;
+    }
+    .gallery .steaks {
+      order: 5;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery-pics {
+      height: auto;
+    }
+    .gallery-pics picture {
+      width: 100%;
+    }
+  }
+
+    /* ? =================== Contact ===================  */
+
+@media  screen and (max-width: 992px) {
+  .contact form .form-group input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-item { 
+    width: 100%;
+  }
+}
+
+
+ /* ? =================== Footer ===================  */
+
+ @media screen and (max-width: 1200px) {
+  footer :is(.right-section, .left-section) {
+    width: calc(calc(100% - var(--gap) * 1) / 2);
+    order: 1;
+    margin-bottom: 1.875rem;
+  }
+
+  footer :is(.middle-section) {
+    width: 100%;
+    order: 2;
+  }
+
+ }
+
+ @media screen and (max-width: 768px) {
+  footer :is(.right-section, .left-section, .middle-section) {
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    order: 1;
+  }
+ }
+
+ @media screen and (max-width: 576px) {
+  footer .middle-section form {
+    flex-direction: column;
+    gap: .3125rem;
+  }
+  
+  footer .middle-section button {
+    width: 100%;
+    --padding: 12px;
+  }
+  
+ }

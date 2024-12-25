@@ -1,0 +1,26 @@
+:root:has(.mode-logo input:checked) {
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-grey: #252525;
+    --primary-hue: 35;
+    --primary-saturation: 72%;
+    --primary-lightness: 44%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+}
+
+body:has(.mode-logo input:checked) {
+    background-color: #202020;
+}
+
+body:has(.mode-logo input:checked) {
+    nav .mode-logo .light {
+        display: block;
+    }
+    nav .mode-logo .dark {
+        display: none;
+    }
+}
+
